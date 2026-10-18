@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#07030b">
+  <title>Gửi Mẹ — 20/10 💗</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="intro" class="intro">
+    <div class="intro-glow"></div>
+    <div class="intro-content">
+      <p class="eyebrow">MỘT MÓN QUÀ NHỎ DÀNH CHO NGƯỜI ĐẶC BIỆT NHẤT</p>
+      <div class="intro-heart">♡</div>
+      <h1>Gửi Mẹ <span>♡</span></h1>
+      <p class="intro-sub">Có một vũ trụ nhỏ, con dành riêng cho mẹ...</p>
+      <button id="startBtn" class="glow-button">Mở món quà của con <span>✦</span></button>
+      <p class="tiny-note">Dành tặng mẹ nhân ngày Phụ nữ Việt Nam 20/10</p>
+    </div>
+  </div>
+
+  <main id="app" class="app hidden">
+    <canvas id="stars" aria-hidden="true"></canvas>
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
+
+    <header class="topbar">
+      <div class="brand"><span class="brand-dot"></span> FOR MOM <span class="brand-heart">♡</span></div>
+      <div class="top-actions">
+        <button id="musicBtn" class="icon-button" aria-label="Bật hoặc tắt nhạc" title="Bật/tắt nhạc">♫ <span>Nhạc</span></button>
+        <button id="letterBtn" class="envelope-button" aria-label="Mở lá thư" title="Mở lá thư cho mẹ">✉ <span>Thư gửi mẹ</span></button>
+      </div>
+    </header>
+
+    <div class="hint"><span class="hint-icon">✧</span> Kéo để khám phá vũ trụ lời chúc <span class="hint-arrows">↕ ↔</span></div>
+
+    <section id="spaceViewport" class="space-viewport" aria-label="Không gian lời chúc">
+      <div id="space" class="space">
+        <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+        <div class="centerpiece">
+          <span class="center-small">MY UNIVERSE</span>
+          <div class="center-heart">♡</div>
+          <h2>Mẹ là <em>nhà</em></h2>
+          <p>Nơi bình yên nhất của con</p>
+        </div>
+
+        <p class="wish wish-1">Cảm ơn mẹ vì đã luôn ở đây ♡</p>
+        <p class="wish wish-2">Mong mẹ luôn khỏe mạnh và bình an</p>
+        <p class="wish wish-3">Mẹ xứng đáng với tất cả những điều dịu dàng nhất</p>
+        <p class="wish wish-4">Con có thể lớn lên, nhưng vẫn luôn cần vòng tay mẹ</p>
+        <p class="wish wish-5">Chúc người phụ nữ tuyệt vời nhất của con 20/10 thật vui</p>
+        <p class="wish wish-6">Mong nụ cười của mẹ luôn rạng rỡ như hôm nay</p>
+        <p class="wish wish-7">Con thương mẹ nhiều hơn những gì con nói được</p>
+        <p class="wish wish-8">Nhà mình sẽ luôn có thật nhiều tiếng cười nhé mẹ</p>
+        <p class="wish wish-9">Mẹ là món quà quý giá nhất cuộc đời con</p>
+        <p class="wish wish-10">Chúc mẹ mỗi ngày đều có một lý do để hạnh phúc ✨</p>
+        <p class="wish wish-11">Nếu có thể chọn lại, con vẫn muốn làm con của mẹ</p>
+        <p class="wish wish-12">Happy Vietnamese Women's Day, Mom ♡</p>
+
+        <div class="photo-card photo-1">
+          <img src="./images/anhme2.jpg" alt="Khoảnh khắc gia đình" loading="lazy">
+          <span>Những điều giản dị, là những điều quý giá nhất</span>
+        </div>
+        <div class="photo-card photo-2">
+          <img src="./images/anhme1.jpg" alt="Kỷ niệm yêu thương" loading="lazy">
+          <span>Thương mẹ thật nhiều ♡</span>
+        </div>
+        <div class="photo-card photo-3">
+          <img src="./images/anhme3.jpg" alt="Ánh sáng dịu dàng" loading="lazy">
+          <span>Chỉ cần mẹ bình an</span>
+        </div>
+        <div class="photo-card photo-4">
+          <img src="./images/anhme4.jpg" alt="Gia đình" loading="lazy">
+          <span>Vũ trụ nhỏ của con</span>
+        </div>
+
+        <div class="tiny-label label-a">♡ MOM ♡</div>
+        <div class="tiny-label label-b">YOU ARE LOVED</div>
+        <div class="tiny-label label-c">20 · 10</div>
+        <div class="end-note">Và còn rất nhiều điều con muốn nói với mẹ... <span>♡</span></div>
+      </div>
+    </section>
+
+    <footer class="bottom-bar">
+      <span>MADE WITH <b>♡</b> FOR MOM</span>
+      <button id="replayBtn" class="text-button">Xem lại từ đầu ↗</button>
+    </footer>
+  </main>
+
+  <div id="letterModal" class="letter-modal" aria-hidden="true">
+    <div class="letter-backdrop"></div>
+    <article class="letter-card" role="dialog" aria-modal="true" aria-labelledby="letterTitle">
+      <button id="closeLetter" class="close-letter" aria-label="Đóng thư">×</button>
+      <div class="letter-flower">✿</div>
+      <p class="letter-kicker">MỘT LÁ THƯ NHỎ</p>
+      <h2 id="letterTitle">Gửi mẹ yêu của con</h2>
+      <div class="letter-rule">♡ ✦ ♡</div>
+      <div class="letter-body">
+        <p>Mẹ yêu dấu,</p>
+        <p>Nhân ngày 20/10, con chúc mẹ luôn thật nhiều sức khỏe, bình an và vui vẻ. Con cảm ơn mẹ vì đã yêu thương, chăm sóc và kiên nhẫn với con mỗi ngày, kể cả những lúc con chưa ngoan hay chưa biết cách nói lời yêu thương.</p>
+        <p>Có thể con không phải lúc nào cũng nói ra, nhưng con luôn biết ơn vì có mẹ bên cạnh. Con mong mẹ sẽ dành nhiều thời gian hơn cho bản thân, làm những điều mẹ thích và luôn nhớ rằng mẹ được yêu thương rất nhiều.</p>
+        <p>Con sẽ cố gắng trưởng thành hơn từng ngày để mẹ yên lòng. Chúc mẹ của con có một ngày 20/10 thật hạnh phúc — hôm nay và cả những ngày sau nữa.</p>
+        <p class="letter-sign">Con thương mẹ nhiều lắm! <span>♡</span></p>
+      </div>
+      <div class="letter-bottom">MÃI YÊU MẸ · 20/10</div>
+    </article>
+  </div>
+
+  <div id="toast" class="toast">Một trái tim dành tặng mẹ ♡</div>
+  <script src="script.js"></script>
+</body>
+</html>
